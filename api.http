@@ -1,0 +1,15 @@
+@base_address = http://localhost:8080
+GET {{base_address}}/users
+###
+GET {{base_address}}/users/1
+###
+POST {{base_address}}/users
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Alex",
+  "sureName": "Popovich",
+  "passportNumber": "963890458",
+  "age": 23
+}
